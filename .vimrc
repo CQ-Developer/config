@@ -80,13 +80,8 @@ set wildmenu
 " wildmode wim
 set wildmode=list:longest,full
 
-" 在启动NERDTree时始终显示书签
-" let NERDTreeShowBookmarks = 1
-" 在编辑时令NERDTree窗口保持打开
-" autocmd VimEnter * NERDTree
-" 当NERDTree成为最后一个窗口时将其关闭
-" autocmd bufenter * if (winnr("$") == 1 && exists("b:ENRDTree") && b:ENRDTree.isTabTree()) | q | endif
-" 防止NERDTree取代Netrw
-" let NERDTreeHijackNetrw = 0
-let loaded_nerd_tree = 1
+" 高亮显示搜索结果
+set hlsearch
 
+" 在未完整输入时直接跳到搜索结果
+set incsearch
