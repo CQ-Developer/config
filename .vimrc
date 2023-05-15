@@ -17,13 +17,11 @@ set clipboard=unnamed,unnamedplus
 set swapfile
 set directory="/home/chen/.vim/swap//"
 set undodir="/home/chen/.vim/undodir"
-
 syntax on
-packloadall
-colorscheme default
+filetype on
 filetype plugin indent on
 silent! helptags ALL
-
+colorscheme default
 if &term =~ "xterm"
     let &t_SI = "\<Esc>[6 q"
     let &t_SR = "\<Esc>[3 q"
