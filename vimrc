@@ -58,3 +58,9 @@ set hlsearch
 set incsearch
 " 复制到系统寄存器(*,+)
 set clipboard=unnamed,unnamedplus
+" 光标设置
+if &term =~ "xterm"
+    let &t_SI = "\<Esc>[6 q"
+    let &t_SR = "\<Esc>[3 q"
+    let &t_EI = "\<Esc>[2 q"
+endif
