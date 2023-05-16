@@ -10,7 +10,7 @@ set tabstop=4
 set shiftwidth=4
 set backspace=2
 set foldcolumn=0
-set foldmethod=indent
+set foldmethod=manual
 set hlsearch
 set incsearch
 set clipboard=unnamed,unnamedplus
@@ -27,3 +27,7 @@ if &term =~ "xterm"
     let &t_SR = "\<Esc>[3 q"
     let &t_EI = "\<Esc>[2 q"
 endif
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
