@@ -1,3 +1,10 @@
+let mapleader = "\<space>"
+if &term =~ "xterm"
+    let &t_SI = "\<Esc>[6 q"
+    let &t_SR = "\<Esc>[3 q"
+    let &t_EI = "\<Esc>[2 q"
+endif
+
 set number
 set relativenumber
 set cursorline
@@ -22,17 +29,19 @@ filetype on
 filetype plugin indent on
 silent! helptags ALL
 colorscheme default
-if &term =~ "xterm"
-    let &t_SI = "\<Esc>[6 q"
-    let &t_SR = "\<Esc>[3 q"
-    let &t_EI = "\<Esc>[2 q"
-endif
+
 map <up> <nop>
 map <down> <nop>
 map <left> <nop>
 map <right> <nop>
+noremap <leader>n :Lex<cr>:vert res 75<cr>
+noremap <leader>w :w<cr>
 inoremap ' ''<esc>i
 inoremap " ""<esc>i
 inoremap ( ()<esc>i
 inoremap [ []<esc>i
 inoremap { {}<esc>i
+
+call plug#begin()
+Plug 'easymontion/vim-easymotion'
+call plug#end()
