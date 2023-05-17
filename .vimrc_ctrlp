@@ -1,4 +1,4 @@
-let g:ctrlp_workding_path_mode = 'ra'
+let g:ctrlp_working_path_mode = 'ra'
 
 noremap <leader>p :CtrlP<cr>
 noremap <leader>b :CtrlPBuffer<cr>
