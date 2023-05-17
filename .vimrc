@@ -36,6 +36,9 @@ map <left> <nop>
 map <right> <nop>
 noremap <leader>n :Lex<cr>:vert res 75<cr>
 noremap <leader>w :w<cr>
+noremap <leader>p :CtrlP<cr>
+noremap <leader>b :CtrlPBuffer<cr>
+noremap <leader>m :CtrlPMRU<cr>
 inoremap ' ''<esc>i
 inoremap " ""<esc>i
 inoremap ( ()<esc>i
@@ -45,4 +48,5 @@ inoremap < <><esc>i
 
 call plug#begin()
 Plug 'easymotion/vim-easymotion'
+Plug 'ctrlpvim/ctrlp.vim'
 call plug#end()
