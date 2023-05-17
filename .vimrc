@@ -41,6 +41,7 @@ inoremap " ""<esc>i
 inoremap ( ()<esc>i
 inoremap [ []<esc>i
 inoremap { {}<esc>i
+inoremap < <><esc>i
 
 call plug#begin()
 Plug 'easymotion/vim-easymotion'
