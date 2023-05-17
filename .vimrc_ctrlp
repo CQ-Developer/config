@@ -1,0 +1,5 @@
+let g:ctrlp_workding_path_mode = 'ra'
+
+noremap <leader>p :CtrlP<cr>
+noremap <leader>b :CtrlPBuffer<cr>
+noremap <leader>m :CtrlPMRU<cr>

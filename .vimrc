@@ -7,6 +7,7 @@ endif
 
 set number
 set relativenumber
+set showcmd
 set cursorline
 set cursorcolumn
 set wildmenu
