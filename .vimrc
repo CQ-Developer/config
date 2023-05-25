@@ -19,7 +19,7 @@ set relativenumber
 set laststatus=2
 set showcmd
 set cursorline
-set cursorcolumn
+"set cursorcolumn
 set wildmenu
 set wildmode=list:longest,full
 set autoindent
