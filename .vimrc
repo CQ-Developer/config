@@ -58,4 +58,6 @@ inoremap < <><esc>i
 call plug#begin()
 Plug 'easymotion/vim-easymotion'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'vim-scripts/ScrollColors'
+Plug 'flazz/vim-colorschemes'
 call plug#end()
