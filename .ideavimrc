@@ -1,0 +1,21 @@
+let mapleader = "\<space>"
+let g:EasyMotion_override_acejump = 0
+
+map Q gq
+noremap <c-j> <c-w>j
+noremap <c-k> <c-w>k
+noremap <c-h> <c-w>h
+noremap <c-l> <c-w>l
+
+set highlightedyank
+set commentary
+set easymotion
+
+set scrolloff=5
+set hlsearch
+set incsearch
+set relativenumber
+set showcmd
+set hlsearch
+set incsearch
+set clipboard=unnamed,unnamedplus
