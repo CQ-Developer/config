@@ -12,6 +12,7 @@ if &term =~ "xterm"
     let &t_EI = "\<Esc>[2 q"
 endif
 
+set termguicolors
 set number
 set relativenumber
 set showcmd
