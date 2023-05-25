@@ -15,6 +15,7 @@ endif
 set termguicolors
 set number
 set relativenumber
+set laststatus=2
 set showcmd
 set cursorline
 set cursorcolumn
