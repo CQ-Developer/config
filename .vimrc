@@ -36,7 +36,7 @@ syntax on
 filetype on
 filetype plugin indent on
 silent! helptags ALL
-colorscheme default
+colorscheme evening
 
 map <up> <nop>
 map <down> <nop>
