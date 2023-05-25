@@ -1,4 +1,5 @@
 call plug#begin()
+Plug 'vim-airline/vim-airline'
 Plug 'easymotion/vim-easymotion'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'vim-scripts/ScrollColors'
