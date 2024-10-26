@@ -39,6 +39,7 @@
     "jdk.runConfig.vmOptions": "-Xms2g -Xmx2g -XX:+UseZGC",
     "vim.highlightedyank.enable": true,
     "vim.highlightedyank.duration": 300,
+    "vim.highlightedyank.color": "rgba(85, 107, 47, 0.8)",
     "vim.useSystemClipboard": true,
     "vim.hlsearch": true,
     "vim.incsearch": true,
@@ -63,15 +64,5 @@
         "statusBar.debuggingBackground": "#8FBCBB",
         "statusBar.foreground": "#434C5E",
         "statusBar.debuggingForeground": "#434C5E"
-    },
-    "vim.normalModeKeyBindingsNonRecursive": [
-        { "before": [ "H" ], "after": [ "^" ] },
-        { "before": [ "L" ], "after": [ "$" ] },
-        { "before": [ "J" ], "after": [ "<C-d>" ] },
-        { "before": [ "K" ], "after": [ "<C-u>" ] },
-        { "before": [ "<C-h>" ], "after": [ "<C-w>", "h" ] },
-        { "before": [ "<C-l>" ], "after": [ "<C-w>", "l" ] },
-        { "before": [ "<C-j>" ], "after": [ "g", "T" ] },
-        { "before": [ "<C-k>" ], "after": [ "g", "t" ] }
-    ]
+    }
 }

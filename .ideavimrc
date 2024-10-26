@@ -1,21 +1,45 @@
-let mapleader = "\<space>"
-let g:EasyMotion_override_acejump = 0
+let mapleader=" "
 
-map Q gq
-noremap <c-j> <c-w>j
-noremap <c-k> <c-w>k
-noremap <c-h> <c-w>h
-noremap <c-l> <c-w>l
-
-set highlightedyank
-set commentary
-set easymotion
-
+" config
 set scrolloff=5
-set hlsearch
 set incsearch
+set hlsearch
 set relativenumber
 set showcmd
-set hlsearch
-set incsearch
 set clipboard=unnamed,unnamedplus
+
+" plugins
+set easymotion
+set commentary
+set surround
+set highlightedyank
+set NERDTree
+
+" key mapping
+map Q gq
+map <C-n> :nohl<cr>
+map <CR> <Action>(GotoDeclaration)
+map <BS> <Action>(Back)
+map <A-k> <Action>(Forward)
+map <A-j> <Action>(Back)
+map H ^
+map L $
+map J }
+map K {
+map <C-k> :tabn<CR>
+map <C-j> :tabp<CR>
+map <C-h> <C-w>h
+map <C-l> <C-w>l
+map <leader>w <Action>(HideAllWindows)
+map <leader>t :tabo<CR>
+map <leader>ss <Action>(FindInPath)
+map <leader>sf <Action>(GotoFile)
+map <leader>sc <Action>(GotoClass)
+map <leader>se <Action>(SearchEverywhere)
+map <leader>sa <Action>(GotoAction)
+map <leader>ff <Action>(ReformatCode)<Action>(OptimizeImports)
+map <leader>i <Action>(Generate)
+map <leader>rr <Action>(RenameElement)
+map <leader>zz <Action>(ToggleZenMode)
+map <leader>R <Action>(RunClass)
+map<leader>D <Action>(DebugClass)
