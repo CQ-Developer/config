@@ -26,10 +26,6 @@ map H ^
 map L $
 map J 5j
 map K 5k
-map dH d^
-map dL d$
-map cH c^
-map cL c$
 map <C-k> gt
 map <C-j> gT
 map <C-h> <C-w>h

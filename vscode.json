@@ -65,15 +65,11 @@
         "statusBar.foreground": "#434C5E",
         "statusBar.debuggingForeground": "#434C5E"
     },
-    "vim.normalModeKeyBindingsNonRecursive": [
+    "vim.normalModeKeyBindings": [
         { "before": [ "H" ], "after": [ "^" ] },
         { "before": [ "L" ], "after": [ "$" ] },
         { "before": [ "J" ], "after": [ "<C-d>" ] },
         { "before": [ "K" ], "after": [ "<C-u>" ] },
-        { "before": ["d", "H"], "after": ["d", "^"] },
-        { "before": ["d", "L"], "after": ["d", "$"] },
-        { "before": ["c", "H"], "after": ["c", "^"] },
-        { "before": ["c", "L"], "after": ["c", "$"] },
         { "before": [ "<C-h>" ], "after": [ "<C-w>", "h" ] },
         { "before": [ "<C-l>" ], "after": [ "<C-w>", "l" ] },
         { "before": [ "<C-j>" ], "after": [ "g", "T" ] },
