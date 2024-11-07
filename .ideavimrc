@@ -1,7 +1,7 @@
 let mapleader=" "
 
 " config
-set scrolloff=3
+set scrolloff=5
 set incsearch
 set hlsearch
 set relativenumber
@@ -42,6 +42,7 @@ let g:EasyMotion_startofline = 0
 let g:EasyMotion_smartcase = 1
 let g:EasyMotion_use_upper = 1
 let g:EasyMotion_use_smartsign = 1
+map <Leader>s <Plug>(easymotion-sl)
 map <Leader>f <Plug>(easymotion-fl)
 map <Leader>F <Plug>(easymotion-Fl)
 map <Leader>t <Plug>(easymotion-tl)

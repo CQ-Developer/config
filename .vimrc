@@ -91,7 +91,7 @@ let g:airline#extensions#cursormode#enabled = 1
 
 " plug battery wifi config
 set statusline+=%{battery#component()}
-let g:battery#update_tabline = 1
+let g:battery#update_statusline = 1
 
 " plug coc.vim config
 let g:coc_global_extensions = ['coc-vimlsp', 'coc-json', 'coc-yank']
