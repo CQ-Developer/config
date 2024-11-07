@@ -36,6 +36,8 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'bling/vim-bufferline'
 Plug 'lambdalisue/battery.vim'
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
+Plug 'terryma/vim-multiple-cursors'
+Plug 'tommcdo/vim-exchange'
 call plug#end()
 
 " plug seoul256 config
@@ -44,10 +46,7 @@ colo seoul256
 set background=dark
 
 " plug nerdtree config
-nnoremap <Leader>n :NERDTree<CR>
-nnoremap <C-n> :NERDTreeFocus<CR>
-nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <C-f> :NERDTreeFind<CR>
+nnoremap <Leader>n :NERDTreeToggle<CR>
 
 " plug vim-easymotion config
 let g:EasyMotion_startofline = 0
@@ -95,7 +94,7 @@ set statusline+=%{battery#component()}
 let g:battery#update_tabline = 1
 
 " plug coc.vim config
-let g:coc_global_extensions = ['coc-vimlsp', 'coc-json']
+let g:coc_global_extensions = ['coc-vimlsp', 'coc-json', 'coc-yank']
 let g:markdown_fenced_languages = ['vim', 'help']
 inoremap <silent><expr> <TAB> coc#pum#visible() ? coc#pum#next(1) : CheckBackspace() ? "\<Tab>" : coc#refresh()
 inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
@@ -128,4 +127,7 @@ nmap <leader>rn <Plug>(coc-rename)
 xmap <leader>a  <Plug>(coc-codeaction-selected)
 nmap <leader>a  <Plug>(coc-codeaction-selected)
 " nmap <leader>q <Plug>(coc-format-selected)
+
+" plug coc-yank config
+nnoremap <silent> <space>y :<C-u>CocList -A --normal yank<cr>
 

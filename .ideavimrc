@@ -42,10 +42,10 @@ let g:EasyMotion_startofline = 0
 let g:EasyMotion_smartcase = 1
 let g:EasyMotion_use_upper = 1
 let g:EasyMotion_use_smartsign = 1
-map f <Plug>(easymotion-fl)
-map F <Plug>(easymotion-Fl)
-map t <Plug>(easymotion-tl)
-map T <Plug>(easymotion-Tl)
+map <Leader>f <Plug>(easymotion-fl)
+map <Leader>F <Plug>(easymotion-Fl)
+map <Leader>t <Plug>(easymotion-tl)
+map <Leader>T <Plug>(easymotion-Tl)
 map / <Plug>(easymotion-sn)
 map n <Plug>(easymotion-next)
 map N <Plug>(easymotion-prev)
