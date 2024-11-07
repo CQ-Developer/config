@@ -1,7 +1,5 @@
 " global
 let mapleader = " "
-let &t_EI = "\<Esc>[2 q"
-let &t_SI = "\<Esc>[6 q"
 map H ^
 map J 5j
 map K 5k
@@ -25,6 +23,7 @@ set updatetime=100
 set signcolumn=yes
 set hidden
 set shortmess+=c
+set clipboard+=unnamed,unnamedplus
 
 " plugin
 call plug#begin()
@@ -55,15 +54,15 @@ let g:EasyMotion_startofline = 0
 let g:EasyMotion_smartcase = 1
 let g:EasyMotion_use_upper = 1
 let g:EasyMotion_use_smartsign = 1
-map s <Plug>(easymotion-s2)
-map f <Plug>(easymotion-f2)
-map F <Plug>(easymotion-F2)
-map <Leader>f <Plug>(easymotion-fn)
-map <Leader>F <Plug>(easymotion-Fn)
-map t <Plug>(easymotion-t2)
-map T <Plug>(easymotion-T2)
-map <Leader>t <Plug>(easymotion-tn)
-map <Leader>t <Plug>(easymotion-Tn)
+map f <Plug>(easymotion-fl)
+map F <Plug>(easymotion-Fl)
+map t <Plug>(easymotion-tl)
+map T <Plug>(easymotion-Tl)
+map <Leader>s <Plug>(easymotion-s2)
+map <Leader>f <Plug>(easymotion-f2)
+map <Leader>F <Plug>(easymotion-F2)
+map <Leader>t <Plug>(easymotion-t2)
+map <Leader>t <Plug>(easymotion-T2)
 map / <Plug>(easymotion-sn)
 map n <Plug>(easymotion-next)
 map N <Plug>(easymotion-prev)
@@ -96,7 +95,7 @@ set statusline+=%{battery#component()}
 let g:battery#update_tabline = 1
 
 " plug coc.vim config
-let g:coc_global_extensions = ['coc-vimlsp']
+let g:coc_global_extensions = ['coc-vimlsp', 'coc-json']
 let g:markdown_fenced_languages = ['vim', 'help']
 inoremap <silent><expr> <TAB> coc#pum#visible() ? coc#pum#next(1) : CheckBackspace() ? "\<Tab>" : coc#refresh()
 inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
@@ -128,3 +127,5 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 nmap <leader>rn <Plug>(coc-rename)
 xmap <leader>a  <Plug>(coc-codeaction-selected)
 nmap <leader>a  <Plug>(coc-codeaction-selected)
+" nmap <leader>q <Plug>(coc-format-selected)
+
