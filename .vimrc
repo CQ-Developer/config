@@ -16,6 +16,9 @@ inoremap ' ''<Esc>i
 inoremap " ""<Esc>i
 set rnu
 set smartcase
+set incsearch
+set hlsearch
+set ignorecase
 set showcmd
 set noshowmode
 set encoding=utf-8
@@ -24,6 +27,7 @@ set signcolumn=yes
 set hidden
 set shortmess+=c
 set clipboard+=unnamed,unnamedplus
+set wildmenu
 
 " plugin
 call plug#begin()
@@ -38,6 +42,7 @@ Plug 'lambdalisue/battery.vim'
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tommcdo/vim-exchange'
+Plug 'tpope/vim-commentary'
 call plug#end()
 
 " plug seoul256 config
@@ -94,7 +99,7 @@ set statusline+=%{battery#component()}
 let g:battery#update_statusline = 1
 
 " plug coc.vim config
-let g:coc_global_extensions = ['coc-vimlsp', 'coc-json', 'coc-yank']
+let g:coc_global_extensions = ['coc-vimlsp', 'coc-json', 'coc-yank', 'coc-xml']
 let g:markdown_fenced_languages = ['vim', 'help']
 inoremap <silent><expr> <TAB> coc#pum#visible() ? coc#pum#next(1) : CheckBackspace() ? "\<Tab>" : coc#refresh()
 inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"

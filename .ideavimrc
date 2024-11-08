@@ -1,9 +1,11 @@
-let mapleader=" "
+let mapleader = " "
 
 " config
 set scrolloff=5
 set incsearch
 set hlsearch
+set smartcase
+set ignorecase
 set relativenumber
 set showcmd
 set clipboard=unnamed,unnamedplus
@@ -27,6 +29,7 @@ nmap <C-k> gt
 nmap <C-j> gT
 nmap <C-h> <C-w>h
 nmap <C-l> <C-w>l
+map \ :noh<CR>
 
 " idea config
 nmap <CR> <Action>(GotoDeclaration)
@@ -47,9 +50,9 @@ map <Leader>f <Plug>(easymotion-fl)
 map <Leader>F <Plug>(easymotion-Fl)
 map <Leader>t <Plug>(easymotion-tl)
 map <Leader>T <Plug>(easymotion-Tl)
-map / <Plug>(easymotion-sn)
-map n <Plug>(easymotion-next)
-map N <Plug>(easymotion-prev)
+" nmap / <Plug>(easymotion-sn)
+" nmap n <Plug>(easymotion-next)
+" nmap N <Plug>(easymotion-prev)
 map <Leader><Leader>h <Plug>(easymotion-linebackward)
 map <Leader><Leader>l <Plug>(easymotion-lineforward)
 
