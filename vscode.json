@@ -11,7 +11,7 @@
     "terminal.integrated.smoothScrolling": true,
     "editor.fontFamily": "'Cascadia Code', 'Noto Sans SC'",
     "editor.fontLigatures": true,
-    "editor.fontSize": 16,
+    "editor.fontSize": 18,
     "editor.fontWeight": "normal",
     "editor.scrollbar.horizontalScrollbarSize": 6,
     "editor.scrollbar.verticalScrollbarSize": 6,
@@ -64,11 +64,15 @@
     "vim.normalModeKeyBindings": [
         { "before": [ "H" ], "after": [ "^" ] },
         { "before": [ "L" ], "after": [ "$" ] },
-        { "before": [ "J" ], "after": [ "5", "j" ] },
-        { "before": [ "K" ], "after": [ "5", "k" ] },
+        { "before": [ "J" ], "after": [ "<C-d>" ] },
+        { "before": [ "K" ], "after": [ "<C-u>" ] },
         { "before": [ "<C-h>" ], "after": [ "<C-w>", "h" ] },
         { "before": [ "<C-l>" ], "after": [ "<C-w>", "l" ] },
         { "before": [ "<C-j>" ], "after": [ "g", "T" ] },
         { "before": [ "<C-k>" ], "after": [ "g", "t" ] }
+    ],
+    "vim.operatorPendingModeKeyBindings": [
+        { "before": ["L"], "after": ["$"] },
+        { "before": ["H"], "after": ["^"] }
     ]
 }
