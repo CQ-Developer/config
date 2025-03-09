@@ -8,7 +8,7 @@ set smartcase
 set ignorecase
 set relativenumber
 set showcmd
-set clipboard=unnamed,unnamedplus
+set clipboard^=ideaput,unnamed,unnamedplus
 
 " plugins
 Plug 'easymotion/vim-easymotion'
