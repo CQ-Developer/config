@@ -34,7 +34,6 @@
     "workbench.preferredLightColorTheme": "Default Light Modern",
     "workbench.preferredDarkColorTheme": "Default Dark Modern",
     "workbench.list.smoothScrolling": true,
-	"workbench.tree.indent": 32,
 	"workbench.reduceMotion": "off",
     "vim.highlightedyank.enable": true,
     "vim.highlightedyank.duration": 300,
