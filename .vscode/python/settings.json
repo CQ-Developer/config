@@ -1,0 +1,21 @@
+{
+    "black-formatter.args": [
+        "-S",
+        "-l", "999"
+    ],
+    "python.analysis.typeCheckingMode": "strict",
+    "python.analysis.extraPaths": [
+        "src",
+        "test"
+    ],
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportIncompatibleMethodOverride": "information"
+    },
+    "python.testing.unittestEnabled": true,
+    "python.testing.unittestArgs": [
+        "-v",
+        "-t", ".",
+        "-s", "test",
+        "-p", "test_*.py"
+    ]
+}
