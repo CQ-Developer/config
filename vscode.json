@@ -29,12 +29,14 @@
     "diffEditor.ignoreTrimWhitespace": true,
     "diffEditor.maxComputationTime": 0,
     "diffEditor.renderSideBySide": true,
+    "diffEditor.hideUnchangedRegions.enabled": true,
     "window.autoDetectColorScheme": true,
     "workbench.startupEditor": "none",
     "workbench.preferredLightColorTheme": "Default Light Modern",
     "workbench.preferredDarkColorTheme": "Default Dark Modern",
     "workbench.list.smoothScrolling": true,
 	"workbench.reduceMotion": "off",
+    "workbench.iconTheme": "material-icon-theme",
     "vim.highlightedyank.enable": true,
     "vim.highlightedyank.duration": 300,
     "vim.highlightedyank.color": "rgba(85, 107, 47, 0.8)",
@@ -76,5 +78,8 @@
     "vim.operatorPendingModeKeyBindings": [
         { "before": ["L"], "after": ["$"] },
         { "before": ["H"], "after": ["^"] }
-    ]
+    ],
+    "dev.containers.dockerPath": "docker",
+    "containers.containerClient": "com.microsoft.visualstudio.containers.docker",
+    "remote.autoForwardPortsSource": "hybrid"
 }
