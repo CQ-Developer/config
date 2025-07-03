@@ -101,4 +101,3 @@ let g:battery#update_statusline = 1
 " plug highlightedyank config
 let g:highlightedyank_highlight_duration = 300
 let g:highlightedyank_highlight_in_visual = 0
-

@@ -75,6 +75,10 @@
         { "before": [ "<C-j>" ], "after": [ "g", "T" ] },
         { "before": [ "<C-k>" ], "after": [ "g", "t" ] }
     ],
+    "vim.visualModeKeyBindings": [
+        { "before": ["L"], "after": ["$"] },
+        { "before": ["H"], "after": ["^"] }
+    ],
     "vim.operatorPendingModeKeyBindings": [
         { "before": ["L"], "after": ["$"] },
         { "before": ["H"], "after": ["^"] }
