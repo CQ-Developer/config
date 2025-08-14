@@ -9,10 +9,10 @@
     "terminal.integrated.cursorStyle": "block",
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.smoothScrolling": true,
-    "editor.fontFamily": "'Cascadia Code', 'Noto Sans SC'",
+    "editor.fontFamily": "'Google Sans Code', 'Cascadia Code', 'Noto Sans SC'",
     "editor.fontLigatures": true,
     "editor.fontSize": 18,
-    "editor.fontWeight": "normal",
+    "editor.fontWeight": 500,
     "editor.scrollbar.horizontalScrollbarSize": 6,
     "editor.scrollbar.verticalScrollbarSize": 6,
     "editor.smoothScrolling": true,
@@ -37,6 +37,7 @@
     "workbench.list.smoothScrolling": true,
 	"workbench.reduceMotion": "off",
     "workbench.iconTheme": "material-icon-theme",
+    "vim.foldfix": true,
     "vim.highlightedyank.enable": true,
     "vim.highlightedyank.duration": 300,
     "vim.highlightedyank.color": "rgba(85, 107, 47, 0.8)",
@@ -65,25 +66,39 @@
         "statusBar.foreground": "#434C5E",
         "statusBar.debuggingForeground": "#434C5E"
     },
+    "vim.handleKeys": {
+        "<C-d>": false,
+        "<C-s>": false,
+        "<C-z>": false,
+        "<C-f>": false,
+        "<C-b>": false,
+        "<C-p>": false
+    },
     "vim.normalModeKeyBindings": [
         { "before": [ "H" ], "after": [ "^" ] },
         { "before": [ "L" ], "after": [ "$" ] },
-        { "before": [ "J" ], "after": [ "<C-d>" ] },
-        { "before": [ "K" ], "after": [ "<C-u>" ] },
+        { "before": [ "J" ], "after": [ "5", "j" ] },
+        { "before": [ "K" ], "after": [ "5", "k" ] },
         { "before": [ "<C-h>" ], "after": [ "<C-w>", "h" ] },
         { "before": [ "<C-l>" ], "after": [ "<C-w>", "l" ] },
         { "before": [ "<C-j>" ], "after": [ "g", "T" ] },
-        { "before": [ "<C-k>" ], "after": [ "g", "t" ] }
+        { "before": [ "<C-k>" ], "after": [ "g", "t" ] },
+        { "before": [ "g", "j" ], "commands": [ "workbench.action.navigateBack" ] },
+        { "before": [ "g", "k" ], "commands": [ "workbench.action.navigateForward" ] }
     ],
     "vim.visualModeKeyBindings": [
         { "before": ["L"], "after": ["$"] },
-        { "before": ["H"], "after": ["^"] }
+        { "before": ["H"], "after": ["^"] },
+        { "before": [ "J" ], "after": [ "5", "j" ] },
+        { "before": [ "K" ], "after": [ "5", "k" ] }
     ],
     "vim.operatorPendingModeKeyBindings": [
         { "before": ["L"], "after": ["$"] },
-        { "before": ["H"], "after": ["^"] }
+        { "before": ["H"], "after": ["^"] },
+        { "before": [ "J" ], "after": [ "5", "j" ] },
+        { "before": [ "K" ], "after": [ "5", "k" ] }
     ],
-    "dev.containers.dockerPath": "docker",
-    "containers.containerClient": "com.microsoft.visualstudio.containers.docker",
+    "dev.containers.dockerPath": "podman",
+	"dev.containers.dockerComposePath": "podman-compose",
     "remote.autoForwardPortsSource": "hybrid"
 }
