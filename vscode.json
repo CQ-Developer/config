@@ -19,6 +19,7 @@
     "editor.unicodeHighlight.ambiguousCharacters": false,
     "editor.lineNumbers": "relative",
     "editor.cursorSmoothCaretAnimation": "on",
+    "editor.guides.bracketPairs": "active",
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 1500,
     "files.encoding": "utf8",
