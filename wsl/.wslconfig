@@ -1,0 +1,10 @@
+[wsl2]
+memory=4GB
+processors=4
+localhostForwarding=true
+guiApplications=false
+dnsProxy=true
+autoProxy=true
+
+[experimental]
+sparseVhd=true
