@@ -85,7 +85,8 @@
         { "before": [ "<C-j>" ], "after": [ "g", "T" ] },
         { "before": [ "<C-k>" ], "after": [ "g", "t" ] },
         { "before": [ "g", "j" ], "commands": [ "workbench.action.navigateBack" ] },
-        { "before": [ "g", "k" ], "commands": [ "workbench.action.navigateForward" ] }
+        { "before": [ "g", "k" ], "commands": [ "workbench.action.navigateForward" ] },
+        { "before": [ "Q" ], "commands": [ "editor.action.formatDocument" ] }
     ],
     "vim.visualModeKeyBindings": [
         { "before": ["L"], "after": ["$"] },
