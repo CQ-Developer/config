@@ -18,6 +18,7 @@
     "editor.smoothScrolling": true,
     "editor.unicodeHighlight.ambiguousCharacters": false,
     "editor.lineNumbers": "relative",
+    "editor.cursorBlinking": "smooth",
     "editor.cursorSmoothCaretAnimation": "on",
     "editor.guides.bracketPairs": "active",
     "files.autoSave": "afterDelay",
