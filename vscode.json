@@ -1,6 +1,6 @@
 {
-    "git.confirmSync": false,
-    "git.autofetch": true,
+    "remote.autoForwardPortsSource": "hybrid",
+    "chat.disableAIFeatures": true,
     "terminal.integrated.defaultProfile.windows": "Command Prompt",
     "terminal.integrated.fontFamily": "'Cascadia Code', 'Noto Sans SC'",
     "terminal.integrated.fontSize": 16,
@@ -21,7 +21,7 @@
     "editor.cursorSmoothCaretAnimation": "on",
     "editor.guides.bracketPairs": "active",
     "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 1500,
+    "files.autoSaveDelay": 5000,
     "files.encoding": "utf8",
     "files.eol": "\n",
     "explorer.confirmDelete": false,
@@ -38,6 +38,14 @@
     "workbench.list.smoothScrolling": true,
 	"workbench.reduceMotion": "off",
     "workbench.iconTheme": "material-icon-theme",
+    "workbench.editor.empty.hint": "hidden",
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#8FBCBB",
+        "statusBar.noFolderBackground": "#8FBCBB",
+        "statusBar.debuggingBackground": "#8FBCBB",
+        "statusBar.foreground": "#434C5E",
+        "statusBar.debuggingForeground": "#434C5E"
+    },
     "vim.foldfix": true,
     "vim.highlightedyank.enable": true,
     "vim.highlightedyank.duration": 300,
@@ -60,13 +68,6 @@
     "vim.statusBarColors.easymotionmode": "#007ACC",
     "vim.statusBarColors.easymotioninputmode": "#007ACC",
     "vim.statusBarColors.surroundinputmode": "#007ACC",
-    "workbench.colorCustomizations": {
-        "statusBar.background": "#8FBCBB",
-        "statusBar.noFolderBackground": "#8FBCBB",
-        "statusBar.debuggingBackground": "#8FBCBB",
-        "statusBar.foreground": "#434C5E",
-        "statusBar.debuggingForeground": "#434C5E"
-    },
     "vim.handleKeys": {
         "<C-d>": false,
         "<C-s>": false,
@@ -99,8 +100,5 @@
         { "before": ["H"], "after": ["^"] },
         { "before": [ "J" ], "after": [ "5", "j" ] },
         { "before": [ "K" ], "after": [ "5", "k" ] }
-    ],
-    "dev.containers.dockerPath": "podman",
-	"dev.containers.dockerComposePath": "podman-compose",
-    "remote.autoForwardPortsSource": "hybrid"
+    ]
 }
