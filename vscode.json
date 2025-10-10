@@ -41,6 +41,7 @@
     "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
     "workbench.editor.empty.hint": "hidden",
     "workbench.colorCustomizations": {
+        "editor.selectionBackground": "#8b4513",
         "statusBar.background": "#222222",
         "statusBar.noFolderBackground": "#222222",
         "statusBar.debuggingBackground": "#222222",
