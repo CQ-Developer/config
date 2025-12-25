@@ -1,0 +1,24 @@
+services:
+  devcontainer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - type: bind
+        source: ../../HopeDataRuns
+        target: /home/chen/HopeDataRuns
+    network_mode: "service:mysql"
+    command: ["sleep", "inf"]
+  mysql:
+    image: docker.1ms.run/library/mysql:5.7-debian
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+    volumes:
+      - type: volume
+        source: hope-data-runs
+        target: /var/lib/mysql
+      - type: bind
+        source: ../HopeDataRuns/database/
+        target: /docker-entrypoint-initdb.d/
+volumes:
+  hope-data-runs:
