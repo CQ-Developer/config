@@ -1,8 +1,10 @@
 {
-    "remote.autoForwardPortsSource": "hybrid",
     "chat.disableAIFeatures": true,
+    
+    "remote.autoForwardPortsSource": "hybrid",
+    
     "terminal.integrated.defaultProfile.windows": "Command Prompt",
-    "terminal.integrated.fontFamily": "'Cascadia Code', 'Noto Sans SC'",
+    "terminal.integrated.fontFamily": "'Maple Mono NF CN', 'Cascadia Code', 'Noto Sans SC'",
     "terminal.integrated.fontSize": 16,
     "terminal.integrated.fontWeight": "normal",
     "terminal.integrated.fontWeightBold": "bold",
@@ -10,10 +12,11 @@
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.smoothScrolling": true,
     "terminal.integrated.minimumContrastRatio": 1,
+    
     "editor.semanticHighlighting.enabled": true,
     "editor.fontFamily": "'Maple Mono NF CN', 'Google Sans Code', 'Cascadia Code', 'Noto Sans SC'",
     "editor.fontLigatures": true,
-    "editor.fontSize": 18,
+    "editor.fontSize": 20,
     "editor.fontWeight": 500,
     "editor.scrollbar.horizontalScrollbarSize": 6,
     "editor.scrollbar.verticalScrollbarSize": 6,
@@ -24,39 +27,45 @@
     "editor.cursorSmoothCaretAnimation": "on",
     "editor.guides.bracketPairs": "active",
     "editor.minimap.autohide": "scroll",
-	"zenMode.hideLineNumbers": false,
-	"zenMode.hideStatusBar": false,
+    
+    "zenMode.hideLineNumbers": false,
+    "zenMode.hideStatusBar": false,
+    
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 3000,
     "files.encoding": "utf8",
     "files.eol": "\n",
+    
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     "explorer.compactFolders": false,
+    
     "diffEditor.ignoreTrimWhitespace": true,
     "diffEditor.maxComputationTime": 0,
     "diffEditor.renderSideBySide": true,
     "diffEditor.hideUnchangedRegions.enabled": true,
+    
     "window.autoDetectColorScheme": true,
     "window.titleBarStyle": "custom",
     "catppuccin.workbenchMode": "flat",
-	"catppuccin.extraBordersEnabled": false,
+    "catppuccin.extraBordersEnabled": false,
     "workbench.startupEditor": "none",
     "workbench.iconTheme": "catppuccin-mocha",
     "workbench.preferredLightColorTheme": "Catppuccin Latte",
     "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
     "workbench.list.smoothScrolling": true,
-	"workbench.reduceMotion": "off",
+    "workbench.reduceMotion": "off",
     "workbench.editor.empty.hint": "hidden",
     "workbench.colorCustomizations": {
         "editorGroup.border": "#ffffff00",
         "editor.selectionBackground": "#8b4513",
-        "statusBar.background": "#222222",
-        "statusBar.noFolderBackground": "#222222",
-        "statusBar.debuggingBackground": "#222222",
+        "statusBar.background": "#1e1e2e",
+        "statusBar.noFolderBackground": "#1e1e2e",
+        "statusBar.debuggingBackground": "#1e1e2e",
         "statusBar.foreground": "#ffffff",
         "statusBar.debuggingForeground": "#ffffff"
     },
+    
     "vim.foldfix": true,
     "vim.highlightedyank.enable": true,
     "vim.highlightedyank.duration": 300,
@@ -68,17 +77,17 @@
     "vim.easymotion": true,
     "vim.surround": true,
     "vim.statusBarColorControl": true,
-	"vim.statusBarColors.normal": [ "#1e1e2e", "#ffffff" ],
-	"vim.statusBarColors.insert": [ "#483d8b", "#ffffff" ],
-	"vim.statusBarColors.visual": [ "#5f00af", "#ffffff" ],
-	"vim.statusBarColors.visualblock": [ "#86592d", "#ffffff" ],
-	"vim.statusBarColors.visualline": [ "#005f87", "#ffffff" ],
-	"vim.statusBarColors.replace": [ "#808000", "#ffffff" ],
-	"vim.statusBarColors.commandlineinprogress": [ "#4169e1", "#ffffff" ],
-	"vim.statusBarColors.searchinprogressmode": [ "#4169e1", "#ffffff" ],
-	"vim.statusBarColors.easymotionmode": [ "#4169e1", "#ffffff" ],
-	"vim.statusBarColors.easymotioninputmode": [ "#4169e1", "#ffffff" ],
-	"vim.statusBarColors.surroundinputmode": [ "#4169e1", "#ffffff" ],
+    "vim.statusBarColors.normal": [ "#1e1e2e", "#ffffff" ],
+    "vim.statusBarColors.insert": [ "#483d8b", "#ffffff" ],
+    "vim.statusBarColors.visual": [ "#5f00af", "#ffffff" ],
+    "vim.statusBarColors.visualblock": [ "#86592d", "#ffffff" ],
+    "vim.statusBarColors.visualline": [ "#005f87", "#ffffff" ],
+    "vim.statusBarColors.replace": [ "#808000", "#ffffff" ],
+    "vim.statusBarColors.commandlineinprogress": [ "#4169e1", "#ffffff" ],
+    "vim.statusBarColors.searchinprogressmode": [ "#4169e1", "#ffffff" ],
+    "vim.statusBarColors.easymotionmode": [ "#4169e1", "#ffffff" ],
+    "vim.statusBarColors.easymotioninputmode": [ "#4169e1", "#ffffff" ],
+    "vim.statusBarColors.surroundinputmode": [ "#4169e1", "#ffffff" ],
     "vim.handleKeys": {
         "<C-d>": false,
         "<C-s>": false,
@@ -90,26 +99,22 @@
     "vim.normalModeKeyBindings": [
         { "before": [ "H" ], "after": [ "^" ] },
         { "before": [ "L" ], "after": [ "$" ] },
-        { "before": [ "J" ], "after": [ "5", "j" ] },
-        { "before": [ "K" ], "after": [ "5", "k" ] },
         { "before": [ "<C-h>" ], "after": [ "<C-w>", "h" ] },
         { "before": [ "<C-l>" ], "after": [ "<C-w>", "l" ] },
-        { "before": [ "<C-j>" ], "after": [ "g", "T" ] },
-        { "before": [ "<C-k>" ], "after": [ "g", "t" ] },
+        { "before": [ "<C-j>" ], "after": [ "<C-w>", "j" ] },
+        { "before": [ "<C-k>" ], "after": [ "<C-w>", "k" ] },
         { "before": [ "g", "j" ], "commands": [ "workbench.action.navigateBack" ] },
         { "before": [ "g", "k" ], "commands": [ "workbench.action.navigateForward" ] },
-        { "before": [ "Q" ], "commands": [ "editor.action.formatDocument" ] }
+        { "before": [ "Q" ], "commands": [ "editor.action.formatDocument" ] },
+        { "before": [ "<C-[>" ], "after": [ "g", "T" ] },
+        { "before": [ "<C-]>" ], "after": [ "g", "t" ] }
     ],
     "vim.visualModeKeyBindings": [
-        { "before": ["L"], "after": ["$"] },
-        { "before": ["H"], "after": ["^"] },
-        { "before": [ "J" ], "after": [ "5", "j" ] },
-        { "before": [ "K" ], "after": [ "5", "k" ] }
+        { "before": [ "L" ], "after": [ "$" ] },
+        { "before": [ "H" ], "after": [ "^" ] }
     ],
     "vim.operatorPendingModeKeyBindings": [
-        { "before": ["L"], "after": ["$"] },
-        { "before": ["H"], "after": ["^"] },
-        { "before": [ "J" ], "after": [ "5", "j" ] },
-        { "before": [ "K" ], "after": [ "5", "k" ] }
+        { "before": [ "L" ], "after": [ "$" ] },
+        { "before": [ "H" ], "after": [ "^" ] }
     ]
 }
