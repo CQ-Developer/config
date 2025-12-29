@@ -1,72 +1,68 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-    "startOnUserLogin": true,
-    "windowingBehavior": "useExisting",
-    "launchMode": "default",
-    "launchSize": 120,
+    "actions": [],
+    "alwaysOnTop": false,
+    "alwaysShowNotificationIcon": true,
+    "alwaysShowTabs": true,
+    "autoHideWindow": false,
     "centerOnLaunch": true,
     "compatibility.enableUnfocusedAcrylic": true,
-    "copyOnSelect": false,
-    "copyFormatting": false,
-    "trimBlockSelection": true,
-    "trimPaste": true,
-    "snapToGridOnResize": true,
-    "minimizeToNotificationArea": false,
-    "alwaysShowNotificationIcon": true,
-    "tabSwitcherMode": "inOrder",
-    "autoHideWindow": false,
-    "focusFollowMouse": true,
-    "experimental.detectURLs": true,
-    "largePasteWarning": true,
-    "multiLinePasteWarning": true,
-    "language": "en-US",
-    "theme": "system",
-    "alwaysShowTabs": true,
-    "newTabPosition": "afterLastTab",
-    "showTabsInTitlebar": true,
-    "useAcrylicInTabRow": true,
-    "showTerminalTitleInTitlebar": true,
-    "alwaysOnTop": false,
-    "tabWidthMode": "compact",
-    "disableAnimations": false,
     "confirmCloseAllTabs": true,
-    "keybindings": [
+    "copyFormatting": "none",
+    "copyOnSelect": false,
+    "defaultProfile": "{d15b228a-05d7-50d1-8472-f60aaba86efc}",
+    "disableAnimations": false,
+    "experimental.detectURLs": true,
+    "focusFollowMouse": true,
+    "keybindings": 
+    [
         {
             "id": "Terminal.DuplicatePaneAuto",
             "keys": "alt+shift+d"
         }
     ],
-    "newTabMenu": [
+    "language": "en-US",
+    "largePasteWarning": true,
+    "launchMode": "default",
+    "minimizeToNotificationArea": false,
+    "multiLinePasteWarning": true,
+    "newTabMenu": 
+    [
         {
             "type": "remainingProfiles"
         }
     ],
-    "profiles": {
-        "defaults": {
-            "colorScheme": {
-                "light": "One Half Light",
-                "dark": "One Half Dark"
+    "newTabPosition": "afterLastTab",
+    "profiles": 
+    {
+        "defaults": 
+        {
+            "antialiasingMode": "grayscale",
+            "autoMarkPrompts": true,
+            "colorScheme": 
+            {
+                "dark": "One Half Dark",
+                "light": "One Half Light"
             },
-            "font": {
-                "face": "Cascadia Code PL",
-                "size": 14,
+            "cursorShape": "filledBox",
+            "experimental.repositionCursorWithMouse": false,
+            "experimental.rightClickContextMenu": true,
+            "font": 
+            {
+                "face": "Maple Mono NF CN",
+                "size": 12,
                 "weight": "normal"
             },
-            "cursorShape": "bar",
-            "opacity": 60,
-            "useAcrylic": true,
-            "scrollbarState": "visible",
-            "antialiasingMode": "grayscale",
-            "snapOnInput": true,
             "historySize": 10000,
-            "autoMarkPrompts": true,
+            "opacity": 60,
+            "scrollbarState": "visible",
             "showMarksOnScrollbar": true,
-            "experimental.rightClickContextMenu": true,
-            "experimental.repositionCursorWithMouse": true
+            "snapOnInput": true,
+            "useAcrylic": true
         },
-        "list": [
+        "list": 
+        [
             {
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
@@ -78,18 +74,59 @@
                 "name": "cmd"
             },
             {
-                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
-                "name": "Azure Cloud Shell",
-                "source": "Windows.Terminal.Azure"
+                "guid": "{df6a10c1-bc96-5bcb-8a06-d05b59e365b5}",
+                "hidden": false,
+                "name": "Ubuntu-24.04",
+                "source": "Microsoft.WSL"
             },
             {
-                "guid": "{ab9f1cde-f68e-5ef8-a345-b0ea50eddf72}",
+                "guid": "{999b3a15-5a16-5da2-bbb4-e2238a3052cf}",
+                "hidden": false,
+                "name": "archlinux",
+                "source": "Microsoft.WSL"
+            },
+            {
+                "commandline": "D:\\dev\\PortableGit\\bin\\bash.exe",
+                "guid": "{d15b228a-05d7-50d1-8472-f60aaba86efc}",
+                "name": "Git Bash",
+                "startingDirectory": "%USERPROFILE%"
+            },
+            {
+                "guid": "{ff52d6ae-6f12-519e-851f-85a985101868}",
+                "hidden": false,
+                "name": "FedoraLinux-43",
+                "source": "Microsoft.WSL"
+            },
+            {
+                "guid": "{1396f7f0-0ea4-5d30-9591-0df997e08962}",
+                "hidden": false,
+                "name": "FedoraLinux-43",
+                "source": "Microsoft.WSL"
+            },
+            {
+                "guid": "{963ff2f7-6aed-5ce3-9d91-90d99571f53a}",
+                "hidden": false,
+                "name": "Ubuntu-24.04",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "guid": "{4575c2b9-4551-59f1-bc09-3d79a70ea3f6}",
+                "hidden": false,
                 "name": "Ubuntu-24.04",
                 "source": "Microsoft.WSL"
             }
         ]
     },
-    "actions": [],
     "schemes": [],
-    "themes": []
+    "showTabsInTitlebar": true,
+    "showTerminalTitleInTitlebar": true,
+    "snapToGridOnResize": true,
+    "tabSwitcherMode": "inOrder",
+    "tabWidthMode": "equal",
+    "theme": "system",
+    "themes": [],
+    "trimBlockSelection": true,
+    "trimPaste": true,
+    "useAcrylicInTabRow": true,
+    "windowingBehavior": "useExisting"
 }
