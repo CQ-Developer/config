@@ -9,6 +9,7 @@ set ignorecase
 set relativenumber
 set showcmd
 set clipboard^=ideaput,unnamed,unnamedplus
+set ideajoin
 
 " plugins
 Plug 'easymotion/vim-easymotion'
@@ -18,15 +19,13 @@ Plug 'machakann/vim-highlightedyank'
 Plug 'preservim/nerdtree'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tommcdo/vim-exchange'
-
-" key mapping
 map H ^
 map L $
-map J 5j
-map K 5k
 nmap Q gq
-nmap <C-k> gt
-nmap <C-j> gT
+nmap <C-]> gt
+nmap <C-[> gT
+nmap <C-k> <C-w>k
+nmap <C-j> <C-w>j
 nmap <C-h> <C-w>h
 nmap <C-l> <C-w>l
 map \ :noh<CR>
@@ -34,8 +33,8 @@ map \ :noh<CR>
 " idea config
 nmap <CR> <Action>(GotoDeclaration)
 nmap <BS> <Action>(Back)
-nmap <D-k> <Action>(Forward)
-nmap <D-j> <Action>(Back)
+nmap <A-k> <Action>(Forward)
+nmap <A-j> <Action>(Back)
 nmap <Leader>rr <Action>(RenameElement)
 nmap <Leader>R <Action>(Run)
 nmap <Leader>D <Action>(Debug)
