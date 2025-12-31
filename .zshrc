@@ -94,6 +94,7 @@ plugins=(
     copypath
     docker
     docker-compose
+    podman
     fancy-ctrl-z
     eza
     fzf
