@@ -94,7 +94,6 @@ plugins=(
     copypath
     docker
     docker-compose
-    podman
     fancy-ctrl-z
     eza
     fzf
@@ -105,6 +104,8 @@ plugins=(
     tt
     zoxide
     zsh-interactive-cd
+    systemd
+    ssh
 )
 
 ##### alias-finder #####
