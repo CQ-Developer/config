@@ -84,7 +84,7 @@ zstyle ':omz:plugins:eza' 'hyperlink' yes
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-    ubuntu
+    dnf
     git
     git-prompt
     brew
