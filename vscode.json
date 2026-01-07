@@ -1,8 +1,11 @@
 {
     "chat.disableAIFeatures": true,
-    
+
     "remote.autoForwardPortsSource": "hybrid",
-    
+
+    "containers.containerClient": "com.microsoft.visualstudio.containers.docker",
+    "containers.orchestratorClient": "com.microsoft.visualstudio.orchestrators.dockercompose",
+
     "terminal.integrated.defaultProfile.windows": "Command Prompt",
     "terminal.integrated.fontFamily": "'Maple Mono NF CN', 'Cascadia Code', 'Noto Sans SC'",
     "terminal.integrated.fontSize": 16,
@@ -12,7 +15,7 @@
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.smoothScrolling": true,
     "terminal.integrated.minimumContrastRatio": 1,
-    
+
     "editor.semanticHighlighting.enabled": true,
     "editor.fontFamily": "'Maple Mono NF CN', 'Google Sans Code', 'Cascadia Code', 'Noto Sans SC'",
     "editor.fontLigatures": true,
@@ -27,28 +30,30 @@
     "editor.cursorSmoothCaretAnimation": "on",
     "editor.guides.bracketPairs": "active",
     "editor.minimap.autohide": "scroll",
-    
+
     "zenMode.hideLineNumbers": false,
     "zenMode.hideStatusBar": false,
-    
+
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 3000,
     "files.encoding": "utf8",
     "files.eol": "\n",
-    
+
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     "explorer.compactFolders": false,
-    
+
     "diffEditor.ignoreTrimWhitespace": true,
     "diffEditor.maxComputationTime": 0,
     "diffEditor.renderSideBySide": true,
     "diffEditor.hideUnchangedRegions.enabled": true,
-    
+
     "window.autoDetectColorScheme": true,
     "window.titleBarStyle": "custom",
+
     "catppuccin.workbenchMode": "flat",
     "catppuccin.extraBordersEnabled": false,
+
     "workbench.startupEditor": "none",
     "workbench.iconTheme": "catppuccin-mocha",
     "workbench.preferredLightColorTheme": "Catppuccin Latte",
@@ -65,7 +70,7 @@
         "statusBar.foreground": "#ffffff",
         "statusBar.debuggingForeground": "#ffffff"
     },
-    
+
     "vim.foldfix": true,
     "vim.highlightedyank.enable": true,
     "vim.highlightedyank.duration": 300,

@@ -115,6 +115,7 @@ zstyle ':omz:plugins:alias-finder' cheaper yes
 ##### alias-finder #####
 
 ##### fzf #####
+. $HOME/my_themes/fzf/themes/catppuccin-fzf-mocha.sh
 export FZF_BASE=$(which fzf)
 export FZF_DEFAULT_COMMAND="fd --type file --follow --hidden --exclude .git --strip-cwd-prefix"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
