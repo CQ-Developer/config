@@ -114,6 +114,30 @@
                 "hidden": false,
                 "name": "Ubuntu-24.04",
                 "source": "Microsoft.WSL"
+            },
+            {
+                "guid": "{1c3d80ea-0171-589c-b2b4-0ddee3d1b529}",
+                "hidden": false,
+                "name": "FedoraLinux-43",
+                "source": "Microsoft.WSL"
+            },
+            {
+                "guid": "{69603fe7-6195-5dee-8c3f-d31a53ca9b3b}",
+                "hidden": false,
+                "name": "FedoraLinux-43",
+                "source": "Microsoft.WSL"
+            },
+            {
+                "guid": "{9ac956ee-9ff2-59c7-a58a-827bfe738da2}",
+                "hidden": false,
+                "name": "FedoraLinux-43",
+                "source": "Microsoft.WSL"
+            },
+            {
+                "guid": "{89fd2786-586d-5e46-bcc4-281d4b0f70a6}",
+                "hidden": false,
+                "name": "FedoraLinux-43",
+                "source": "Microsoft.WSL"
             }
         ]
     },
