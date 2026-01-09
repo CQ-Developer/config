@@ -50,6 +50,7 @@
 
     "window.autoDetectColorScheme": true,
     "window.titleBarStyle": "custom",
+	"window.zoomLevel": 1.25,
 
     "catppuccin.workbenchMode": "flat",
     "catppuccin.extraBordersEnabled": false,
