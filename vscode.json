@@ -18,7 +18,7 @@
 
     "editor.semanticHighlighting.enabled": true,
     "editor.fontFamily": "'Maple Mono NF CN', 'Google Sans Code', 'Cascadia Code', 'Noto Sans SC'",
-    "editor.fontLigatures": true,
+    "editor.fontLigatures": "'ss03', 'ss05', 'ss08', 'ss09', 'ss10', 'ss11'",
     "editor.fontSize": 20,
     "editor.fontWeight": 500,
     "editor.scrollbar.horizontalScrollbarSize": 6,
@@ -50,7 +50,7 @@
 
     "window.autoDetectColorScheme": true,
     "window.titleBarStyle": "custom",
-	"window.zoomLevel": 1.25,
+	"window.zoomLevel": 1,
 
     "catppuccin.workbenchMode": "flat",
     "catppuccin.extraBordersEnabled": false,
