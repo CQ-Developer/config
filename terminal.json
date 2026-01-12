@@ -74,64 +74,10 @@
                 "name": "cmd"
             },
             {
-                "guid": "{df6a10c1-bc96-5bcb-8a06-d05b59e365b5}",
-                "hidden": false,
-                "name": "Ubuntu-24.04",
-                "source": "Microsoft.WSL"
-            },
-            {
-                "guid": "{999b3a15-5a16-5da2-bbb4-e2238a3052cf}",
-                "hidden": false,
-                "name": "archlinux",
-                "source": "Microsoft.WSL"
-            },
-            {
                 "commandline": "D:\\dev\\PortableGit\\bin\\bash.exe",
                 "guid": "{d15b228a-05d7-50d1-8472-f60aaba86efc}",
                 "name": "Git Bash",
                 "startingDirectory": "%USERPROFILE%"
-            },
-            {
-                "guid": "{ff52d6ae-6f12-519e-851f-85a985101868}",
-                "hidden": false,
-                "name": "FedoraLinux-43",
-                "source": "Microsoft.WSL"
-            },
-            {
-                "guid": "{1396f7f0-0ea4-5d30-9591-0df997e08962}",
-                "hidden": false,
-                "name": "FedoraLinux-43",
-                "source": "Microsoft.WSL"
-            },
-            {
-                "guid": "{963ff2f7-6aed-5ce3-9d91-90d99571f53a}",
-                "hidden": false,
-                "name": "Ubuntu-24.04",
-                "source": "Windows.Terminal.Wsl"
-            },
-            {
-                "guid": "{4575c2b9-4551-59f1-bc09-3d79a70ea3f6}",
-                "hidden": false,
-                "name": "Ubuntu-24.04",
-                "source": "Microsoft.WSL"
-            },
-            {
-                "guid": "{1c3d80ea-0171-589c-b2b4-0ddee3d1b529}",
-                "hidden": false,
-                "name": "FedoraLinux-43",
-                "source": "Microsoft.WSL"
-            },
-            {
-                "guid": "{69603fe7-6195-5dee-8c3f-d31a53ca9b3b}",
-                "hidden": false,
-                "name": "FedoraLinux-43",
-                "source": "Microsoft.WSL"
-            },
-            {
-                "guid": "{9ac956ee-9ff2-59c7-a58a-827bfe738da2}",
-                "hidden": false,
-                "name": "FedoraLinux-43",
-                "source": "Microsoft.WSL"
             },
             {
                 "guid": "{89fd2786-586d-5e46-bcc4-281d4b0f70a6}",
