@@ -48,6 +48,7 @@
     "diffEditor.renderSideBySide": true,
     "diffEditor.hideUnchangedRegions.enabled": true,
 
+	"window.menuBarVisibility": "visible",
     "window.autoDetectColorScheme": true,
     "window.titleBarStyle": "custom",
 	"window.zoomLevel": 1,
