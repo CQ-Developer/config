@@ -82,6 +82,8 @@
     "vim.leader": "<space>",
     "vim.easymotion": true,
     "vim.surround": true,
+    "vim.sneak": true,
+    "vim.sneakUseIgnorecaseAndSmartcase": true,
     "vim.statusBarColorControl": true,
     "vim.statusBarColors.normal": [ "#1e1e2e", "#ffffff" ],
     "vim.statusBarColors.insert": [ "#483d8b", "#ffffff" ],
