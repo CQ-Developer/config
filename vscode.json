@@ -48,10 +48,10 @@
     "diffEditor.renderSideBySide": true,
     "diffEditor.hideUnchangedRegions.enabled": true,
 
-	"window.menuBarVisibility": "visible",
+    "window.menuBarVisibility": "visible",
     "window.autoDetectColorScheme": true,
     "window.titleBarStyle": "custom",
-	"window.zoomLevel": 1,
+    "window.zoomLevel": 1,
 
     "catppuccin.workbenchMode": "flat",
     "catppuccin.extraBordersEnabled": false,
@@ -125,5 +125,8 @@
     "vim.operatorPendingModeKeyBindings": [
         { "before": [ "L" ], "after": [ "$" ] },
         { "before": [ "H" ], "after": [ "^" ] }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        { "before": "Q", "commands": [ "editor.action.formatSelection" ] }
     ]
 }
