@@ -107,6 +107,7 @@ plugins=(
     zsh-interactive-cd
     systemd
     ssh
+    ssh-agent
 )
 
 ##### alias-finder #####
@@ -125,6 +126,12 @@ export FZF_CTRL_T_OPTS="--walker-skip .git,node_modules,target --preview 'bat -n
 export FZF_CTRL_R_OPTS="--bind 'ctrl-y:execute-silent(echo -n {2..} | pbcopy)+abort' --color header:italic --header 'Press CTRL-Y to copy command into clipboard'"
 export FZF_ALT_C_OPTS="--walker-skip .git,node_modules,target --preview 'tree -C {}'"
 ##### fzf #####
+
+##### ssh-agent #####
+zstyle :omz:plugins:ssh-agent agent-forwarding yes
+zstyle :omz:plugins:ssh-agent lazy yes
+zstyle :omz:plugins:ssh-agent lifetime 6h
+##### ssh-agent #####
 
 source $ZSH/oh-my-zsh.sh
 
