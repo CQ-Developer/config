@@ -35,7 +35,7 @@
     "zenMode.hideStatusBar": false,
 
     "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 3000,
+    "files.autoSaveDelay": 30000,
     "files.encoding": "utf8",
     "files.eol": "\n",
 
@@ -45,13 +45,13 @@
 
     "diffEditor.ignoreTrimWhitespace": true,
     "diffEditor.maxComputationTime": 0,
-    "diffEditor.renderSideBySide": true,
+    "diffEditor.renderSideBySide": false,
     "diffEditor.hideUnchangedRegions.enabled": true,
 
-    "window.menuBarVisibility": "visible",
+	"window.menuBarVisibility": "visible",
     "window.autoDetectColorScheme": true,
     "window.titleBarStyle": "custom",
-    "window.zoomLevel": 1,
+	"window.zoomLevel": 1.5,
 
     "catppuccin.workbenchMode": "flat",
     "catppuccin.extraBordersEnabled": false,
@@ -83,7 +83,6 @@
     "vim.leader": "<space>",
     "vim.easymotion": true,
     "vim.surround": true,
-    "vim.sneak": true,
     "vim.sneakUseIgnorecaseAndSmartcase": true,
     "vim.statusBarColorControl": true,
     "vim.statusBarColors.normal": [ "#1e1e2e", "#ffffff" ],
@@ -114,9 +113,12 @@
         { "before": [ "<C-k>" ], "after": [ "<C-w>", "k" ] },
         { "before": [ "g", "j" ], "commands": [ "workbench.action.navigateBack" ] },
         { "before": [ "g", "k" ], "commands": [ "workbench.action.navigateForward" ] },
+        { "before": [ "g", "x" ], "commands": [ "editor.action.quickFix" ] },
+        { "before": [ "g", "s" ], "commands": [ "editor.action.sourceAction" ] },
         { "before": [ "Q" ], "commands": [ "editor.action.formatDocument" ] },
-        { "before": [ "<C-[>" ], "after": [ "g", "T" ] },
-        { "before": [ "<C-]>" ], "after": [ "g", "t" ] }
+        { "before": [ "[" ], "after": [ "g", "T" ] },
+        { "before": [ "]" ], "after": [ "g", "t" ] },
+        { "before": [ "s" ], "after": [ "<leader>", "<leader>", "/" ] }
     ],
     "vim.visualModeKeyBindings": [
         { "before": [ "L" ], "after": [ "$" ] },
@@ -127,6 +129,6 @@
         { "before": [ "H" ], "after": [ "^" ] }
     ],
     "vim.visualModeKeyBindingsNonRecursive": [
-        { "before": "Q", "commands": [ "editor.action.formatSelection" ] }
+        { "before": [ "Q" ], "commands": [ "editor.action.formatSelection" ] }
     ]
 }
