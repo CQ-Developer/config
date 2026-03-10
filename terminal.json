@@ -15,8 +15,7 @@
     "disableAnimations": false,
     "experimental.detectURLs": true,
     "focusFollowMouse": true,
-    "keybindings": 
-    [
+    "keybindings": [
         {
             "id": "Terminal.DuplicatePaneAuto",
             "keys": "alt+shift+d"
@@ -27,29 +26,24 @@
     "launchMode": "default",
     "minimizeToNotificationArea": false,
     "multiLinePasteWarning": true,
-    "newTabMenu": 
-    [
+    "newTabMenu": [
         {
             "type": "remainingProfiles"
         }
     ],
     "newTabPosition": "afterLastTab",
-    "profiles": 
-    {
-        "defaults": 
-        {
+    "profiles": {
+        "defaults": {
             "antialiasingMode": "grayscale",
             "autoMarkPrompts": true,
-            "colorScheme": 
-            {
+            "colorScheme": {
                 "dark": "One Half Dark",
                 "light": "One Half Light"
             },
             "cursorShape": "filledBox",
             "experimental.repositionCursorWithMouse": false,
             "experimental.rightClickContextMenu": true,
-            "font": 
-            {
+            "font": {
                 "face": "Maple Mono NF CN",
                 "size": 12,
                 "weight": "normal"
@@ -61,8 +55,7 @@
             "snapOnInput": true,
             "useAcrylic": true
         },
-        "list": 
-        [
+        "list": [
             {
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
