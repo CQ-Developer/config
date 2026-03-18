@@ -1,65 +1,59 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": [],
-    "alwaysOnTop": false,
-    "alwaysShowNotificationIcon": true,
-    "alwaysShowTabs": true,
-    "autoHideWindow": false,
-    "centerOnLaunch": true,
-    "compatibility.enableUnfocusedAcrylic": true,
-    "confirmCloseAllTabs": true,
-    "copyFormatting": "none",
-    "copyOnSelect": false,
-    "defaultProfile": "{d15b228a-05d7-50d1-8472-f60aaba86efc}",
-    "disableAnimations": false,
-    "experimental.detectURLs": true,
-    "focusFollowMouse": true,
-    "keybindings": [
-        {
-            "id": "Terminal.DuplicatePaneAuto",
-            "keys": "alt+shift+d"
-        }
-    ],
+    // 全局
     "language": "en-US",
-    "largePasteWarning": true,
-    "launchMode": "default",
-    "minimizeToNotificationArea": false,
-    "multiLinePasteWarning": true,
-    "newTabMenu": [
-        {
-            "type": "remainingProfiles"
-        }
-    ],
-    "newTabPosition": "afterLastTab",
+    "theme": "system",
+    "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+    // 窗口
+    "centerOnLaunch": true,
+    "minimizeToNotificationArea": true,
+    "alwaysShowNotificationIcon": true,
+    "showTabsFullscreen": true,
+    "useAcrylicInTabRow": true,
+    "snapToGridOnResize": true,
+    "tabWidthMode": "compact",
+    "windowingBehavior": "useExisting",
+    "newTabPosition": "afterCurrentTab",
+    // 交互
+    "copyOnSelect": true,
+    // 实验
+    "experimental.detectURLs": true,
+    // 操作
+    "actions": [],
+    // 按键
+    "keybindings": [],
+    // profiles
     "profiles": {
         "defaults": {
-            "antialiasingMode": "grayscale",
-            "autoMarkPrompts": true,
+            // 外观
             "colorScheme": {
-                "dark": "One Half Dark",
-                "light": "One Half Light"
+                "dark": "Tango Dark",
+                "light": "Tango Light"
             },
+            "opacity": 80,
+            "unfocusedAppearance": {
+                "opacity": 60
+            },
+            "showMarksOnScrollbar": true,
+            // 光标
             "cursorShape": "filledBox",
-            "experimental.repositionCursorWithMouse": false,
-            "experimental.rightClickContextMenu": true,
+            // 字体
             "font": {
                 "face": "Maple Mono NF CN",
-                "size": 12,
-                "weight": "normal"
+                "size": 14
             },
+            // 历史
             "historySize": 10000,
-            "opacity": 60,
-            "scrollbarState": "visible",
-            "showMarksOnScrollbar": true,
-            "snapOnInput": true,
-            "useAcrylic": true
+            // 实验
+            "experimental.repositionCursorWithMouse": true,
+            "experimental.rightClickContextMenu": true
         },
         "list": [
             {
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-                "name": "powershell"
+                "name": "Windows PowerShell"
             },
             {
                 "commandline": "%SystemRoot%\\System32\\cmd.exe",
@@ -67,29 +61,10 @@
                 "name": "cmd"
             },
             {
-                "commandline": "D:\\dev\\PortableGit\\bin\\bash.exe",
-                "guid": "{d15b228a-05d7-50d1-8472-f60aaba86efc}",
-                "name": "Git Bash",
-                "startingDirectory": "%USERPROFILE%"
-            },
-            {
-                "guid": "{89fd2786-586d-5e46-bcc4-281d4b0f70a6}",
-                "hidden": false,
-                "name": "FedoraLinux-43",
-                "source": "Microsoft.WSL"
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
             }
         ]
-    },
-    "schemes": [],
-    "showTabsInTitlebar": true,
-    "showTerminalTitleInTitlebar": true,
-    "snapToGridOnResize": true,
-    "tabSwitcherMode": "inOrder",
-    "tabWidthMode": "equal",
-    "theme": "system",
-    "themes": [],
-    "trimBlockSelection": true,
-    "trimPaste": true,
-    "useAcrylicInTabRow": true,
-    "windowingBehavior": "useExisting"
+    }
 }
